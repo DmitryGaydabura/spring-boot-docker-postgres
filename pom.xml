@@ -113,31 +113,11 @@
                     </compilerArgs>
                 </configuration>
             </plugin>
-           <!-- <plugin>
+            <plugin>
                 <groupId>io.fabric8</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <version>0.43.0</version>
-                <executions>
-                    <execution>
-                        <id>docker-build</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>build</goal>
-                        </goals>
-                        <configuration>
-                            <images>
-                                <image>
-                                    <name>spring-boot-keycloak-docker-postgres</name>
-                                    <build>
-                                        <dockerFile>${project.basedir}/Dockerfile</dockerFile>
-                                    </build>
-                                </image>
-                            </images>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>-->
-
+                <artifactId>fabric8-maven-plugin</artifactId>
+                <version>4.4.2</version>
+            </plugin>
         </plugins>
     </build>
 
